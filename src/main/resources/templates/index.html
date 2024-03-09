@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Player Index</title>
+</head>
+<body>
+	<h1>登録選手一覧</h1>
+	<div th:each="player : ${playerList}">
+		<p>[[${player.name}]]:[[${player.birthday}]]</p>
+	</div>
+</body>
+</html>
